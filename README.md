@@ -16,11 +16,11 @@ Install the submodules, which are edits we made to existing repositories:
 This will install our forks of five public repositories under `./ext`.
 These are:
 
-* `ext/ContraPro` ([ContraPro](https://github.com/ZurichNLP/ContraPro)
-* `ext/ContraPro-EN-FR` ([Large-contrastive-pronoun-testset-EN-FR](https://github.com/rbawden/Large-contrastive-pronoun-testset-EN-FR))
-* `ext/ContraWSD` ([ContraWSD](https://github.com/ZurichNLP/ContraWSD)
-* `ext/GTWiC` ([GTWiC](https://github.com/lena-voita/good-translation-wrong-in-context))
-* `ext/discourse-mt-test-sets` ([discourse-mt-test-sets](https://github.com/rbawden/discourse-mt-test-sets))
+* `ext/ContraPro` (ContraPro: [original](https://github.com/ZurichNLP/ContraPro))
+* `ext/ContraPro-EN-FR` (Large-contrastive-pronoun-testset-EN-FR: [original](https://github.com/rbawden/Large-contrastive-pronoun-testset-EN-FR))
+* `ext/ContraWSD` (ContraWSD: [original](https://github.com/ZurichNLP/ContraWSD))
+* `ext/GTWiC` (GTWiC: [original](https://github.com/lena-voita/good-translation-wrong-in-context))
+* `ext/discourse-mt-test-sets` (discourse-mt-test-sets: [original](https://github.com/rbawden/discourse-mt-test-sets))
 
 ## Scripts
 
