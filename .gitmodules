@@ -1,0 +1,15 @@
+[submodule "ContraPro"]
+	path = ext/ContraPro
+	url = git@github.com:mjpost/ContraPro
+[submodule "Large-contrastive-pronoun-testset-EN-FR"]
+	path = ext/ContraPro-EN-FR
+	url = git@github.com:mjpost/Large-contrastive-pronoun-testset-EN-FR
+[submodule "ContraWSD"]
+	path = ext/ContraWSD
+	url = git@github.com:mjpost/ContraWSD
+[submodule "good-translation-wrong-in-context"]
+	path = ext/GTWiC
+	url = git@github.com:mjpost/good-translation-wrong-in-context
+[submodule "discourse-mt-test-sets"]
+	path = ext/discourse-mt-test-sets
+	url = git@github.com:mjpost/discourse-mt-test-sets
