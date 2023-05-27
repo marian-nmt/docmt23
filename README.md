@@ -29,7 +29,7 @@ Under `bin/` are two scripts:
 * `pack.py`: Takes a TSV stream of (sentence,docid) and assembles single-line documents with sentences joined by a delimiter (` <eos>` by default)
 * `extract_sent.py`: Takes a single-line assembled document and extracts the requested sentence.
 
-## ContraPro (English--German)
+## ContraPro (English–German)
 
 **Generating the files**
 
@@ -40,13 +40,14 @@ Using our modified ContraPro dataset, you first need to change to that directory
 
 This will print the file to STDOUT: 36,031 lines of correct and contrastive lines. One of the fields has a value of "correct" or "contrastive"; for generative results, use only the former. You can output only these using the `--correct-only` flag.
 
-For French, you need to pass `-0` (since its JSON file uses 0-indexing), along with some other options.
+For French, you also need to run its setup scripts to download and format the OpenSubtitles data. Then, use our modified tools in the ContraPro repo to generate data files in the same format. Note that you need to pass `-0` (since the EN-FR JSON file uses 0-indexing), along with some other options.
 
     # max 10 sents, en-fr
     cd ext/ContraPro-EN-FR/OpenSubs
     ../../ContraPro/bin/json2text.py --dir ./documents --json-file testset-en-fr.json -s en -t fr -m 250 -ms 10 --spm /path/to/spm/model -0 --correct-only > genpro.max250+10.en-fr.tsv
 
 There are many other options:
+```
   -h, --help            show this help message
                         and exit
   --source SOURCE, -s SOURCE
@@ -73,6 +74,7 @@ There are many other options:
   --correct-only        only output correct
                         lines
   --json-file JSON_FILE, -j JSON_FILE
+```
 
 **File format**
 
@@ -119,7 +121,7 @@ What this script does: it grabs the correct pronoun, and then splits the system 
 
 ## ContraWSD, GTWiC, discourse-mt-test-sets
 
-More details coming soon.
+More details coming soon (goal: 2023-06-02)
 
 ## Citation
 
