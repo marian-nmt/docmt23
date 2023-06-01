@@ -36,7 +36,7 @@ Under `bin/` are two scripts:
 Using our modified ContraPro dataset, you first need to change to that directory and run the download script to download OpenSubs. Then run:
 
     # maximum 250 tokens, en-de
-    ./ext/ContraPro/bin/json2text.py -m 250 --spm /path/to/spm/model --json-file ContraPro/contrapro.json > contrapro.en-de.tsv
+    ./ext/ContraPro/bin/json2text.py -m 250 --spm /path/to/spm/model --json-file ext/ContraPro/contrapro.json > contrapro.en-de.tsv
 
 This will print the file to STDOUT: 36,031 lines of correct and contrastive lines. One of the fields has a value of "correct" or "contrastive"; for generative results, use only the former. You can output only these using the `--correct-only` flag.
 
